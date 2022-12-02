@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>API Sketchfab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ToggleButton.css">
+  <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <title>Hello, world!</title> -->
+</head>
+
+<body>
+  </div>
+  <div class="fullFrameContainer">
+    <div class="d-flex">
+      <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+        <!-- api viewer -->
+        <div class="row">
+          <iframe title="Sketchfab Viewer" src="" id="api-frame" class="modelviewer" aria-placeholder="model window">
+          </iframe>
+        </div>
+        <!-- Tab view buttons -->
+        <div class="row">
+          <!-- Collor selector -->
+          <div class="d-lg-none d-md-block mt-3">
+            <div class=" d-flex justify-content-center text-dark">
+              <div class="d-md-block">
+                <button id="texture-green-orange" class="texture-green-orange texture-button  btn-info" 
+                  type="button">
+                  <!-- <i class="fa fa-check d-block" style="font-size:20px;color:white"></i> -->
+                </button>
+                <button id="texture-yellow-blue" class="texture-yellow-blue texture-button  btn-secondary" 
+                  type="button">
+                  <!-- <i class="fa fa-check d-none" style="font-size:20px;color:white"></i> -->
+                </button>
+                <button id="texture-red-purple" class="texture-red-purple texture-button  btn-danger"
+                  type="button">
+                  <!-- <i class="fa fa-check d-none" style="font-size:20px;color:white"></i></button> -->
+              </div>
+            </div>
+            <!-- animation toggle button -->
+            <div class="col-md-12 col-sm-12 mt-3">
+              <div class="d-md-block d-xxl-none d-xl-none d-lg-none ">
+                <div class="d-flex">
+                  <div class="col-7 text-end">
+                    <h4>Rotate Animations</h4>
+                  </div>
+                  <div class="col-md-1 col-2 d-flex justify-content-center mt-1">
+                    <label class="switch ">
+                      <input id="toggle" type="checkbox" value="true" checked>
+                      <span class="toggle slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Collors view -->
+      <div class="controlviewer d-sm-none d-md-none d-lg-block col-4 p-3">
+        <!-- <div class="row">
+          <h1 class="title">Configurator</h1>
+        </div> -->
+        <div class="row text-center ">
+
+          <p class="title">Configurator</p>
+
+          <hr style="height:5px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+        </div>
+
+        <!-- animation toggle button -->
+        <div class="d-flex justify-content-end text-end pr-3">
+          <div class="col-10 text-end">
+            <h5>Rotate Animations</h5>
+          </div>
+          <div class="col-2 d-flex justify-content-center mt-1">
+            <label class="switch">
+              <input id="toggle" type="checkbox" value="true" checked>
+              <span class="toggle slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Collor selector -->
+        <div class="row text-dark">
+          <p class="subTitle">Colors</p>
+          <hr style="height:3px;border-width:1px;color:rgb(153, 64, 12);background-color:rgb(224, 107, 10)">
+          <div class="d-flex d-md-block">
+            <button id="texture-green-orange" class="texture-green-orange texture-button btn-info " type="button" >
+               <!-- <i class="fa fa-check" style="font-size:20px;color:white" ></i> -->
+            </button>
+            <button id="texture-yellow-blue" class="texture-yellow-blue texture-button  btn-secondary " type="button">
+              <!-- <i class="fa fa-check" style="font-size:20px;color:white"></i> -->
+            </button> 
+            <button id="texture-red-purple" class="texture-red-purple texture-button  btn-danger " type="button" >
+              <!-- <i class="fa fa-check" style="font-size:20px;color:white"></i> -->
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="modelLoader.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

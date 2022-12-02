@@ -1,0 +1,135 @@
+.fullFrameContainer
+{
+  width: 100%;
+  height: unset;
+  aspect-ratio: 21/9;
+}
+.modelviewer
+{
+  height: unset;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #ddffdd;
+}
+
+.controlviewer
+{
+  background-color: antiquewhite;
+}
+
+.title
+{
+  text-align: center;
+  text-decoration: solid;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subTitle
+{
+  text-align: left;
+  text-decoration: solid;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;  
+}
+
+.buttonviewer
+{
+  height: unset;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.tabAnimationToggle
+{
+  display: none;
+}
+
+.texture-button 
+{ 
+  margin: 1px;
+  height: unset;
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: unset;
+  border-radius: 100%;
+  border: 0px;
+}
+.texture-button:hover
+{ 
+  margin: 0px;
+  height: unset;
+  width: 51px;
+  aspect-ratio: 1;
+  background-color: unset;
+  border-radius: 100%;
+  border-color: black;
+}
+
+.green-orange
+{
+  background-color: #3366ff;
+}
+.yellow-blue
+{
+  background-color: #686766;
+}
+.red-purpl
+{
+  background-color: #dd3e48;
+}
+
+.tabbuttonView
+{
+  display: none;  
+}
+
+/* start of desktop styles */
+
+@media screen and (min-width: 991px) {
+  /* start of large tablet styles */
+    .buttonHolder
+      {
+        height: auto;
+        width: auto;
+      }
+      .title
+      {
+        font-size: 25px;      
+      }
+      .subTitle
+      {
+        font-size: 25px;      
+      }
+
+      .tabbuttonView
+      {
+        display: none;  
+      }
+      
+      
+  }
+  
+  @media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+    .controlviewer
+    {
+      display: none;      
+    }
+    .tabAnimationToggle
+    {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+  /* start of phone styles */
+
+    .tabbuttonView
+    {
+      display: none;  
+    }
+  }
+
