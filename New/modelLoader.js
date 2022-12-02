@@ -105,27 +105,60 @@ var success = function success(api) {
               window.console.log(`Registered new texture, ${textures[texture].name}, uid: ${uid}`);
 
               var elements = document.getElementsByClassName(`texture-${texture}`);
-              for(var i = 0; i < elements.length; i++)
-              {                 
-                  elements[i].addEventListener('click',()=>{
-                    let materialToUpdate = material;
-                    materialToUpdate.channels.AlbedoPBR.texture.uid = textures[texture].uid;
-                    materialToUpdate.channels.AlbedoPBR.enable = true;
+              for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('click', () => {
+
+                  let materialToUpdate = material;
+                  materialToUpdate.channels.AlbedoPBR.texture.uid = textures[texture].uid;
+                  materialToUpdate.channels.AlbedoPBR.enable = true;
+                  console.log("matrialCheck");
+                  //displeCheck(elements[i]);
+                  api.setMaterial(materialToUpdate, () => {
                     
-                    api.setMaterial(materialToUpdate, () => {
-                      //ActvateCheckMark(elements);
-                    });
+                    // console.log(elements[i].id);
+                    // var text = elements[i].id;
+                    // text = text.slice(0, -1);
+                    
+                    // var buttons = document.getElementsByClassName("texture-button");
+
+                    // for (let j = 0; j < buttons.length; j++) {
+                    //   var currentid = buttons[j].id;
+                    //   currentid = currentid.slice(0, -1);
+                    //   if (currentid === text) {
+                    //     document.getElementById(text + "1-child").style.display = "block";
+
+                    //     document.getElementById(text + "2-child").style.display = "block";
+
+                    //   }
+                    //   else {
+                    //     document.getElementById(buttons[j].id + "-child").style.display = "none";
+                    //   }
+                    // }
+                    //ActvateCheckMark(elements);
                   });
+                });
               }
             }
           });
         }
       });
       // buttons start here
+      var checkbox = document.querySelectorAll('input[type="checkbox"]');
+      for (let j = 0; j < checkbox.length; j++) {
+        checkbox[j].addEventListener('change', function () {
+          if (checkbox[j].checked) {
+            api.play();
+          }
+          else {
+            api.pause();
+          }
+        });
+
+      }
+
       // check ids.
       document.getElementById('play').addEventListener('click', function () {
         api.play();
-        api.is
       });
       document.getElementById('pause').addEventListener('click', function () {
         api.pause();
@@ -191,26 +224,24 @@ client.init(uid, {
   preload: 1
 });
 
-function displeCheck(e)
-{
+function displeCheck(e) {
+  console.log(e.id);
   var text = e.id;
   text = text.slice(0, -1);
   var buttons = document.getElementsByClassName("texture-button");
-  for(let j= 0; j< buttons.length; j++)
-  {
+  for (let j = 0; j < buttons.length; j++) {
     var currentid = buttons[j].id;
     currentid = currentid.slice(0, -1);
-    if(currentid === text)
-    {
-      document.getElementById(text+"1-child").style.display = "block";
-        
-      document.getElementById(text+"2-child").style.display = "block";
+    if (currentid === text) {
+      document.getElementById(text + "1-child").style.display = "block";
+
+      document.getElementById(text + "2-child").style.display = "block";
 
     }
-    else
-    {      
+    else {
       document.getElementById(buttons[j].id + "-child").style.display = "none";
     }
   }
-  
+
 }
+
