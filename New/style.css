@@ -9,12 +9,12 @@
   height: unset;
   width: 100%;
   aspect-ratio: 16/9;
-  background-color: #ddffdd;
+  
 }
 
 .controlviewer
 {
-  background-color: antiquewhite;
+  background-color: transparent;
 }
 
 .title
