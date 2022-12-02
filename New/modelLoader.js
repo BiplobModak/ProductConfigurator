@@ -106,7 +106,7 @@ var success = function success(api) {
 
               var elements = document.getElementsByClassName(`texture-${texture}`);
               for(var i = 0; i < elements.length; i++)
-              {
+              {                 
                   elements[i].addEventListener('click',()=>{
                     let materialToUpdate = material;
                     materialToUpdate.channels.AlbedoPBR.texture.uid = textures[texture].uid;
@@ -190,3 +190,27 @@ client.init(uid, {
   autostart: 1,
   preload: 1
 });
+
+function displeCheck(e)
+{
+  var text = e.id;
+  text = text.slice(0, -1);
+  var buttons = document.getElementsByClassName("texture-button");
+  for(let j= 0; j< buttons.length; j++)
+  {
+    var currentid = buttons[j].id;
+    currentid = currentid.slice(0, -1);
+    if(currentid === text)
+    {
+      document.getElementById(text+"1-child").style.display = "block";
+        
+      document.getElementById(text+"2-child").style.display = "block";
+
+    }
+    else
+    {      
+      document.getElementById(buttons[j].id + "-child").style.display = "none";
+    }
+  }
+  
+}
