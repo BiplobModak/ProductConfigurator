@@ -30,7 +30,7 @@
 {
   text-align: left;
   text-decoration: solid;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: bold;  
 }
@@ -51,17 +51,17 @@
 { 
   margin: 1px;
   height: unset;
-  width: 50px;
+  width: 40px;
   aspect-ratio: 1;
+  background-image: none;
   background-color: unset;
   border-radius: 100%;
   border: 0px;
 }
+
 .texture-button:hover
 { 
   margin: 0px;
-  height: unset;
-  width: 51px;
   aspect-ratio: 1;
   background-color: unset;
   border-radius: 100%;

@@ -233,13 +233,15 @@ function displeCheck(e) {
     var currentid = buttons[j].id;
     currentid = currentid.slice(0, -1);
     if (currentid === text) {
-      document.getElementById(text + "1-child").style.display = "block";
+      
 
-      document.getElementById(text + "2-child").style.display = "block";
+      document.getElementById(text + "1-child").style.opacity = 1;
+      
+      document.getElementById(text + "2-child").style.opacity = 1;
 
     }
     else {
-      document.getElementById(buttons[j].id + "-child").style.display = "none";
+      document.getElementById(buttons[j].id + "-child").style.opacity = 0;
     }
   }
 
