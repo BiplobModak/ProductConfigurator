@@ -18,83 +18,59 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
   <!-- <title>Hello, world!</title> -->
 </head>
 
 <body>
-  </div>
   <div class="fullFrameContainer">
     <div class="d-flex">
-      <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-        <!-- api viewer -->
-        <div class="row">
-          <iframe title="Sketchfab Viewer" src="" id="api-frame" class="modelviewer" aria-placeholder="model window">
-          </iframe>
-        </div>
-        <!-- Tab view buttons -->
-        <div class="row">
-          <!-- Collor selector -->
-          <div class="d-lg-none d-md-block mt-3">
-            <div class=" d-flex justify-content-center text-dark">
-              <div class="d-md-block d-flex">
-                <button id="texture-green-orange1" class="texture-green-orange texture-button  btn-info" 
-                  type="button" onclick="displeCheck(this)">
-                  <img src="../Check.png" height="30px" width="30px" style="opacity: 1;" id="texture-green-orange1-child">
-                  <!-- <i class="fa fa-check" id="texture-green-orange1-child" style="font-size:20px;color:white; display:block"></i> -->
-                </button>
-                <button id="texture-yellow-blue1" class="texture-yellow-blue texture-button  btn-secondary" 
-                  type="button" onclick="displeCheck(this)">
-                  <img src="../Check.png" height="30px" width="30px" style="opacity: 0;"id="texture-yellow-blue1-child">
-                  <!-- <i class="fa fa-check" id="texture-yellow-blue1-child" style="font-size:20px;color:white; display:none "></i> -->
-                </button>
-                <button id="texture-red-purple1" class="texture-red-purple texture-button  btn-danger" 
-                  type="button" onclick="displeCheck(this)">
-                  <img src="../Check.png" height="30px" width="30px" style="opacity: 0;"id="texture-red-purple1-child">
-                  <!-- <i class="fa fa-check" id="texture-red-purple1-child" style="font-size:20px;color:white; display:none"></i></button> -->
-              </div>
-            </div>
-            <!-- animation toggle button -->
-            <div class="col-md-12 col-sm-12 mt-3">
-              <div class="d-md-block d-xxl-none d-xl-none d-lg-none ">
-                <div class="d-flex">
-                  <div class="col-7 text-end">
-                    <h4>Rotate Animations</h4>
-                  </div>
-                  <div class="col-md-1 col-2 d-flex justify-content-center mt-1">
-                    <label class="switch ">
-                      <input id="toggle" type="checkbox" value="true" checked>
-                      <span class="toggle slider round"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
       <!-- Collors view -->
-      <div class="controlviewer d-sm-none d-md-none d-lg-block col-4 p-3">
-        <!-- <div class="row">
-          <h1 class="title">Configurator</h1>
-        </div> -->
-        <div class="row text-center ">
+      <div class="controlviewer d-sm-none d-md-none d-lg-block col-xl-3 col-xl-3 col-lg-4 pt-xl-5 pt-lg-1 px-5">
+        <div class="row text-center pt-xl-3 pt-lg-3">
 
           <p class="title">Configurator</p>
 
-          <hr style="height:5px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+          <!-- <hr style="height:10px;"> -->
+        </div>
+        <div class="row text-left pt-xl-5 pt-lg-1">
+          <div class="row">
+            <p class="subTitle">Suxuki Bike</p>
+          </div>
+          <div class="row">
+            <p class="para col-12">The full passage of standard Lorem Ipsum copy is:
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+          </div>
+        </div>
+        <!-- Collor selector -->
+        <div class="row pt-xl-5 pt-lg-3">
 
+          <p class="subTitle">Colors</p>
+          
+          <div class="d-flex d-md-block ">
+            
+            <button id="texture-green-orange2" class="texture-green-orange texture-button green-orange" type="button"
+              onclick="displeCheck(this)">
+              <img src="../Check.png" style="opacity: 1;" id="texture-green-orange2-child">
+              <!-- <i class="fa-1x fa-check" style="color:white; display: block;" id="texture-green-orange2-child"></i> -->
+            </button>
+            <button id="texture-yellow-blue2" class="texture-yellow-blue texture-button yellow-blue" type="button"
+              onclick="displeCheck(this)">
+              <img src="../Check.png" style="opacity: 0;" id="texture-yellow-blue2-child">
+              <!-- <i class="fa-1x fa-check" style="color:white; display: none;"id="texture-yellow-blue2-child"></i> -->
+            </button>
+            <button id="texture-red-purple2" class="texture-red-purple texture-button red-purpl" type="button"
+              onclick="displeCheck(this)">
+              <img src="../Check.png" style="opacity: 0;" id="texture-red-purple2-child">
+              <!-- <i class="fa-1x fa-check" style="color:white; display: none;"id="texture-red-purple2-child"></i> -->
+            </button>
+          </div>
         </div>
 
         <!-- animation toggle button -->
-        <div class="d-flex justify-content-end text-end pr-3">
-          <div class="col-10 text-end">
-            <h5>Rotate Animations</h5>
-          </div>
-          <div class="col-2 d-flex justify-content-center mt-1">
+        <div class="d-flex justify-content-start text-centerpr-3 pt-xl-5 pt-lg-4">
+          <p class="animatonTitel pt-lg-1">Rotate Animations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          <div class="d-flex justify-content-center p-1">
             <label class="switch">
               <input id="toggle" type="checkbox" value="true" checked>
               <span class="toggle slider round"></span>
@@ -102,30 +78,72 @@
           </div>
         </div>
 
-        <!-- Collor selector -->
-        <div class="row text-dark">
-          <p class="subTitle">Colors</p>
-          <hr style="height:3px;border-width:1px;color:rgb(153, 64, 12);background-color:rgb(224, 107, 10)">
-          <div class="d-flex d-md-block">
-            <button id="texture-green-orange2" class="texture-green-orange texture-button btn-info" type="button" onclick="displeCheck(this)" >
-              <img src="../Check.png" height="30px" width="30px"style="opacity: 1;"id="texture-green-orange2-child">
-              <!-- <i class="fa-1x fa-check" style="color:white; display: block;" id="texture-green-orange2-child"></i> -->
-            </button>
-            <button id="texture-yellow-blue2" class="texture-yellow-blue texture-button  btn-secondary" type="button" onclick="displeCheck(this)">
-              <img src="../Check.png" height="30px" width="30px" style="opacity: 0;" id="texture-yellow-blue2-child">
-              <!-- <i class="fa-1x fa-check" style="color:white; display: none;"id="texture-yellow-blue2-child"></i> -->
-            </button> 
-            <button id="texture-red-purple2" class="texture-red-purple texture-button  btn-danger" type="button" onclick="displeCheck(this)">
-              <img src="../Check.png" height="30px" width="30px"style="opacity: 0;" id="texture-red-purple2-child">
-              <!-- <i class="fa-1x fa-check" style="color:white; display: none;"id="texture-red-purple2-child"></i> -->
-            </button>
+      </div>
+
+      <div class="d-flex flex-column col-xxl-9 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 pageBackground">
+        <!-- api viewer -->
+        <p class="text-center title d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block">Configurator</p>
+        <iframe title="Sketchfab Viewer" src="" id="api-frame" class="modelviewer" aria-placeholder="model window">
+        </iframe>
+
+        <!-- Tab view buttons -->
+        <div class="row d-lg-none d-md-block mt-3">
+          <!-- Collor selector -->
+          <div class="col-12">
+            <div class="row pt-3">
+              <div class="d-flex justify-content-center">
+                <button id="texture-green-orange1" class="texture-green-orange texture-button  btn-info" type="button"
+                  onclick="displeCheck(this)">
+                  <img src="../Check.png" height="30px" width="30px" style="opacity: 1;"
+                    id="texture-green-orange1-child">
+                  <!-- <i class="fa fa-check" id="texture-green-orange1-child" style="font-size:20px;color:white; display:block"></i> -->
+                </button>
+                <button id="texture-yellow-blue1" class="texture-yellow-blue 
+                texture-button  btn-secondary"
+                  type="button" onclick="displeCheck(this)">
+                  <img src="../Check.png" height="30px" width="30px" style="opacity: 0;"
+                    id="texture-yellow-blue1-child">
+                  <!-- <i class="fa fa-check" id="texture-yellow-blue1-child" style="font-size:20px;color:white; display:none "></i> -->
+                </button>
+                <button id="texture-red-purple1" class="texture-red-purple texture-button  btn-danger" type="button"
+                  onclick="displeCheck(this)">
+                  <img src="../Check.png" height="30px" width="30px" style="opacity: 0;"
+                    id="texture-red-purple1-child">
+                  <!-- <i class="fa fa-check" id="texture-red-purple1-child" style="font-size:20px;color:white; display:none"></i> -->
+                </button>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <!-- animation toggle button -->
+            <div class="d-flex justify-content-center text-center pr-3 pt-xl-5 pt-lg-4">
+              <p class="animatonTitel pt-lg-1">Rotate Animations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              <div class="d-flex justify-content-start p-1">
+                <label class="switch">
+                  <input id="toggle" type="checkbox" value="true" checked>
+                  <span class="toggle slider round"></span>
+                </label>
+              </div>
+            </div>
+            </div>
+            <div class="row text-left px-md-5 pt-md-2">
+              <div class="row">
+                <p class="subTitle">Suxuki Bike</p>
+              </div>
+              <div class="row ">
+                <p class="para col-12">The full passage of standard Lorem Ipsum copy is:
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              </div>
+            </div>
           </div>
+            
+            
+          </div>
+
         </div>
 
-      </div>
-    </div>
-
-  </div>
+    </div><!-- main filter -->
+    
+  </div><!-- main filter -->
 
 
   <script src="modelLoader.js"></script>

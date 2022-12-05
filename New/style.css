@@ -1,135 +1,307 @@
-.fullFrameContainer
-{
+.fullFrameContainer {
   width: 100%;
   height: unset;
-  aspect-ratio: 21/9;
+  aspect-ratio: 22/9;
+  font-family: 'Encode Sans';
 }
-.modelviewer
-{
+
+.modelviewer {
   height: unset;
   width: 100%;
-  aspect-ratio: 16/9;
-  
+  aspect-ratio: 16/10;
 }
 
-.controlviewer
-{
-  background-color: transparent;
+.controlviewer {
+  background-color: #131B26;
 }
 
-.title
-{
+.pageBackground {
+  background-color: #131B26;
+}
+
+.title {
   text-align: center;
   text-decoration: solid;
-  font-size: 36px;
+  font-size: 32px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
+  color: white;
 }
 
-.subTitle
-{
+.subTitle {
   text-align: left;
   text-decoration: solid;
-  font-size: 40px;
-  text-transform: capitalize;
-  font-weight: bold;  
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  color: white;
 }
 
-.buttonviewer
-{
+
+.para {
+  color: rgb(107, 103, 103);
+  text-align: left;
+  text-decoration: solid;
+  font-size: 20px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.animatonTitel {
+  color: rgb(240, 227, 227);
+  text-align: center;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.buttonviewer {
   height: unset;
   width: 100%;
   aspect-ratio: 1;
 }
 
-.tabAnimationToggle
-{
+
+.tabAnimationToggle {
   display: none;
 }
 
-.texture-button 
-{ 
-  margin: 1px;
-  height: unset;
+.texture-button {
+  height: 40px;
   width: 40px;
   aspect-ratio: 1;
-  background-image: none;
-  background-color: unset;
   border-radius: 100%;
-  border: 0px;
+
 }
 
-.texture-button:hover
-{ 
+.texture-button img {
+  height: 20px;
+  width: 20px;
+}
+
+.texture-button:hover {
   margin: 0px;
   aspect-ratio: 1;
-  background-color: unset;
   border-radius: 100%;
-  border-color: black;
 }
 
-.green-orange
-{
-  background-color: #3366ff;
+.green-orange {
+  background-color: #4b6ccf;
 }
-.yellow-blue
-{
+
+.green-orange:hover {
+  background-color: #375099;
+}
+
+.yellow-blue {
   background-color: #686766;
 }
-.red-purpl
-{
+
+.yellow-blue:hover {
+  background-color: #444343;
+}
+
+.red-purpl {
   background-color: #dd3e48;
 }
 
-.tabbuttonView
-{
-  display: none;  
+.red-purpl:hover {
+  background-color: #b6323b;
+}
+
+.tabbuttonView {
+  display: none;
 }
 
 /* start of desktop styles */
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 1024px) {
+
   /* start of large tablet styles */
-    .buttonHolder
-      {
-        height: auto;
-        width: auto;
-      }
-      .title
-      {
-        font-size: 25px;      
-      }
-      .subTitle
-      {
-        font-size: 25px;      
-      }
+  .fullFrameContainer {
+    background-color: #131B26;
+  }
 
-      .tabbuttonView
-      {
-        display: none;  
-      }
-      
-      
+  .modelviewer {
+    background-color: #131B26;
+  }
+
+  .buttonHolder {
+    height: auto;
+    width: auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .animatonTitel {
+    font-size: 14px;
+  }
+
+  .tabbuttonView {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+  /* start of large tablet styles */
+  .fullFrameContainer {
+    aspect-ratio: 4/5;
+    background-color: #131B26;
+  }
+
+  .modelviewer {
+    background-color: #131B26;
+  }
+
+  .buttonHolder {
+    height: auto;
+    width: auto;
+  }
+
+  .title {
+    margin: 20px;
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .para {
+    font-size: 18px;
+  }
+
+  .animatonTitel {
+    font-size: 18px;
+  }
+
+  .tabbuttonView {
+    display: none;
+  }
+  .texture-button {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
   }
   
-  @media screen and (max-width: 767px) {
+  .texture-button img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
   /* start of medium tablet styles */
-    .controlviewer
-    {
-      display: none;      
-    }
-    .tabAnimationToggle
-    {
-      display: block;
-    }
+  .fullFrameContainer {
+    aspect-ratio: 3/4;
+    background-color: #131B26;
   }
-  
-  @media screen and (max-width: 479px) {
+
+  .modelviewer {
+    aspect-ratio: 2/1;
+  }
+
+  .controlviewer {
+    display: none;
+  }
+
+  .tabAnimationToggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
   /* start of phone styles */
-
-    .tabbuttonView
-    {
-      display: none;  
-    }
+  .fullFrameContainer {
+    aspect-ratio: 4/5;
   }
 
+  .tabbuttonView {
+    display: none;
+  }
+
+  .modelviewer {
+    height: unset;
+    width: 100%;
+    aspect-ratio: 16/10;
+  }
+
+  .title {
+    margin: 10px;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .subTitle {
+    text-align: left;
+    text-decoration: solid;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 20px;
+    color: white;
+  }
+
+
+  .para {
+    color: rgb(107, 103, 103);
+    text-align: left;
+    text-decoration: solid;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .animatonTitel {
+    color: rgb(240, 227, 227);
+    text-align: center;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  .buttonviewer {
+    height: unset;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+
+  .tabAnimationToggle {
+    display: none;
+  }
+
+  .texture-button {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+
+  .texture-button img {
+    height: 20px;
+    width: 20px;
+  }
+}
