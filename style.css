@@ -116,6 +116,46 @@
 
 /* start of desktop styles */
 
+@media screen and (max-width: 1399px) {
+
+  /* start of large tablet styles */
+  .fullFrameContainer {
+    background-color: #131B26;
+  }
+
+  .modelviewer {
+    background-color: #131B26;
+  }
+
+  .buttonHolder {
+    height: auto;
+    width: auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .animatonTitel {
+    font-size: 14px;
+  }
+
+  .tabbuttonView {
+    display: none;
+  }
+
+
+}
+
+
 @media screen and (max-width: 1024px) {
 
   /* start of large tablet styles */
@@ -124,6 +164,8 @@
   }
 
   .modelviewer {
+    width: 100%;
+    height: unset;
     background-color: #131B26;
   }
 

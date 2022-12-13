@@ -19,17 +19,17 @@ let material;
 // for dinamic chage it to list or arrey or struct list
 const textures = {
   'green-orange': {
-    url: 'http://127.0.0.1:5500/BodyPaint_ABS_BaseColor_V1.png',// change it ot public link
+    url: 'http://127.0.0.1:5500/images/BodyPaint_ABS_BaseColor_V1.png',// change it ot public link
     name: 'Blue',
     uid: null
   },
   'yellow-blue': {
-    url: 'http://127.0.0.1:5500/BodyPaint_ABS_BaseColor_V2.png',
+    url: 'http://127.0.0.1:5500/images/BodyPaint_ABS_BaseColor_V2.png',
     name: 'Black',
     uid: null
   },
   'red-purple': {
-    url: 'http://127.0.0.1:5500/BodyPaint_ABS_BaseColor_V3.png',
+    url: 'http://127.0.0.1:5500/images/BodyPaint_ABS_BaseColor_V3.png',
     name: 'Red',
     uid: null
   }
